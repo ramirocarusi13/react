@@ -6,7 +6,6 @@ const Header = () => {
     
     const toggleMenuOpen = () => {
         document.body.classList.toggle("open");
-        console.log("open")
     }
     
 
@@ -14,10 +13,10 @@ const Header = () => {
     return (
         <header>
             <nav className="navbar">
-                <div className="navbar-overlay" onclick={() => toggleMenuOpen()}>
+                <div className="navbar-overlay" onClick={() => {toggleMenuOpen()}}>
                 </div>
-                <button  className="navbar-burger" onclick={() => toggleMenuOpen()}>
-                    <span class="material-icons" >
+                <button  className="navbar-burger" onClick={() => {toggleMenuOpen()}}>
+                    <span className="material-icons" >
                         menu
                     </span>
                 </button>
