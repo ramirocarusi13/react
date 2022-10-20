@@ -14,9 +14,9 @@ const Header = () => {
     return (
         <header>
             <nav className="navbar">
-                <div className="navbar-overlay" onclick={toggleMenuOpen()}>
+                <div className="navbar-overlay" onclick={() => toggleMenuOpen()}>
                 </div>
-                <button type="button" className="navbar-burger" onclick={toggleMenuOpen()}>
+                <button  className="navbar-burger" onclick={() => toggleMenuOpen()}>
                     <span class="material-icons" >
                         menu
                     </span>
